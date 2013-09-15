@@ -22,28 +22,28 @@ The Conway's Game of Life is composed by a n x n grid. In the begeinning of the 
 ####Definition of neighbours: Neighbours are those cells that are immediately surround it. See the picture below for a deep understanding:
 
 Demo: cell 'O' is surrounded by its 8 neighbours 'x'   
-xxx
-xOx
-xxx 
+xxx     
+xOx     
+xxx      
 
 ##UML																											
 																													
 	----------------------------------------------      -------------------------------------------------			
     |  		           TextDisplay               |     |					  Cell 						|			
 	----------------------------------------------		-------------------------------------------------			
-	|					     					 |	   |					                            |<------------|
-	|notify(r: integer, c: integer, ch: character|<>-->|	setLiving(void):void                        |			  |
-	|				                             |     |	setCoords(r:integer, c:integer, max:integer)|			  |
-	----------------------------------------------	   |	notifyDisplay(td:TextDisplay&)              |<>------------
+	|					     					 |	   |					                            |
+	|notify(r: integer, c: integer, ch: character|<>-->|	setLiving(void):void                        |
+	|				                             |     |	setCoords(r:integer, c:integer, max:integer)|
+	----------------------------------------------	   |	notifyDisplay(td:TextDisplay&)              |
 			^										   |	resetNumNeiAlive()                          |
 			|										   |	addNeighbour(neighbour: cell*)              |
 			|										   |	notify()                                    |
 			|										   |	notifyNeighbours()                          |
 			|										   |	recalculate()                               |
 		    |										    ------------------------------------------------	
-		   <>														^
-	 --------------------------------------------					|	
-	|					Grid					|					|
+		   <>														^            <>           ^
+	 --------------------------------------------					|	          |           |
+	|					Grid					|					|              -----------
 	 --------------------------------------------					|
 	|	init(n: integer)						|					|
 	|	tick()									|<>------------------
@@ -76,15 +76,15 @@ The program quits when the input stream is exhausted. You may assume that inputs
 *-1*      
 *-1*      
 *print*       
-_____      
-__X__      
-__X__     
-__X__      
-_____       
+\_____      
+\__X__      
+\__X__     
+\__X__      
+\_____       
 *step*       
 *print*       
-_____       
-_____      
-_XXX_       
-_____       
-_____     
+\_____       
+\_____      
+\_XXX_       
+\_____       
+\_____     
