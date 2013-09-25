@@ -1,7 +1,7 @@
 #Conway's Game of Life
 Contributor: Renchen Sun
 
-##Installation
+##Installation 
 1. Clone this repository to your local directory. 
 2. In Xnix terminal
 3. make
