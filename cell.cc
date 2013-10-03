@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "cell.h"
+#include "cell.h"   
 Cell::Cell()
 {
     isAlive = false;
